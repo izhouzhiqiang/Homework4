@@ -15,9 +15,9 @@ curl "${url}/chat/completions" \
                 },
                 {
                     "role": "user",
-                    "content": "Hello!"
+                    "content": "${prompt}\n\n请严格按照以下 JSON 格式回答：{{\"role\":\"用户角色\",\"goal\":\"用户目标\",\"value\":\"用户价值\"}}",
                 }
             ],
-            "stream": true
+
         }'
 
