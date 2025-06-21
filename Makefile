@@ -1,7 +1,10 @@
 .PHONY: all env generate_env
 
-generate_env:
-	pip freeze > requirements.txt
-
 env:
-	pip install -r requirements.txt
+	pip3 install -r requirements_mac.txt
+
+generate_env:
+	pip3 freeze > requirements_mac.txt
+
+all:
+	echo "use `make env` to install python package"
