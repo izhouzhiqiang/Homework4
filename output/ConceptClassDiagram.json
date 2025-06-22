@@ -1,0 +1,239 @@
+{
+  "classes": [
+    {
+      "name": "Customer",
+      "attributes_names": [
+        "name",
+        "email",
+        "phone",
+        "address"
+      ],
+      "attributes_types": [
+        "String",
+        "String",
+        "String",
+        "String"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "searchProducts()",
+        "viewCart()",
+        "placeOrder()"
+      ]
+    },
+    {
+      "name": "Cashier",
+      "attributes_names": [
+        "employeeId",
+        "shiftTime",
+        "registerNumber"
+      ],
+      "attributes_types": [
+        "String",
+        "String",
+        "String"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "scanItems()",
+        "processPayment()",
+        "issueReceipt()"
+      ]
+    },
+    {
+      "name": "InventoryManager",
+      "attributes_names": [
+        "employeeId",
+        "department",
+        "stockTally"
+      ],
+      "attributes_types": [
+        "String",
+        "String",
+        "Integer"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "updateStock()",
+        "generateReport()"
+      ]
+    },
+    {
+      "name": "StoreManager",
+      "attributes_names": [
+        "employeeId",
+        "storeLocation",
+        "responsibilities"
+      ],
+      "attributes_types": [
+        "String",
+        "String",
+        "String"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "scheduleStaff()",
+        "overviewOperations()"
+      ]
+    },
+    {
+      "name": "MarketingManager",
+      "attributes_names": [
+        "employeeId",
+        "campaigns",
+        "budget"
+      ],
+      "attributes_types": [
+        "String",
+        "List",
+        "Double"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "analyzePreferences()",
+        "designPromotion()"
+      ]
+    },
+    {
+      "name": "Saler",
+      "attributes_names": [
+        "employeeId",
+        "floorSection",
+        "skills"
+      ],
+      "attributes_types": [
+        "String",
+        "String",
+        "List"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "assistCustomer()",
+        "informProductDetails()"
+      ]
+    },
+    {
+      "name": "DeliveryDriver",
+      "attributes_names": [
+        "driverId",
+        "vehicleInfo",
+        "routeSchedule"
+      ],
+      "attributes_types": [
+        "String",
+        "String",
+        "String"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "confirmDelivery()",
+        "updateStatus()"
+      ]
+    },
+    {
+      "name": "CustomerServiceAgent",
+      "attributes_names": [
+        "employeeId",
+        "queriesHandled",
+        "shift"
+      ],
+      "attributes_types": [
+        "String",
+        "Integer",
+        "String"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "resolveQuery()",
+        "logComplaint()"
+      ]
+    },
+    {
+      "name": "Accountant",
+      "attributes_names": [
+        "employeeId",
+        "financialReports",
+        "complianceDocs"
+      ],
+      "attributes_types": [
+        "String",
+        "List",
+        "List"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "manageFinances()",
+        "prepareBudget()"
+      ]
+    },
+    {
+      "name": "Auditor",
+      "attributes_names": [
+        "employeeId",
+        "auditSchedule",
+        "reportDocs"
+      ],
+      "attributes_types": [
+        "String",
+        "String",
+        "List"
+      ],
+      "is_abstract": false,
+      "methods": [
+        "conductAudit()",
+        "verifyConsistency()"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Customer",
+      "target": "DeliveryDriver",
+      "type": "Associates",
+      "multiplicity": null,
+      "label": null
+    },
+    {
+      "source": "Cashier",
+      "target": "Customer",
+      "type": "Associates",
+      "multiplicity": null,
+      "label": null
+    },
+    {
+      "source": "InventoryManager",
+      "target": "StoreManager",
+      "type": "ReportsTo",
+      "multiplicity": null,
+      "label": null
+    },
+    {
+      "source": "MarketingManager",
+      "target": "StoreManager",
+      "type": "ReportsTo",
+      "multiplicity": null,
+      "label": null
+    },
+    {
+      "source": "Saler",
+      "target": "Customer",
+      "type": "Assists",
+      "multiplicity": null,
+      "label": null
+    },
+    {
+      "source": "CustomerServiceAgent",
+      "target": "Customer",
+      "type": "Supports",
+      "multiplicity": null,
+      "label": null
+    },
+    {
+      "source": "Accountant",
+      "target": "Auditor",
+      "type": "Collaborates",
+      "multiplicity": null,
+      "label": null
+    }
+  ]
+}

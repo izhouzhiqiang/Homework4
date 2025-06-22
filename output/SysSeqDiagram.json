@@ -1,0 +1,129 @@
+{
+  "title": "Supermarket Management System",
+  "description": "A system to facilitate supermarket operations with seamless interaction among various roles.",
+  "participants": [
+    {
+      "name": "Customer",
+      "type": "External User",
+      "description": "End user who buys products."
+    },
+    {
+      "name": "Cashier",
+      "type": "Internal User",
+      "description": "Handles transactions at checkout."
+    },
+    {
+      "name": "Inventory Manager",
+      "type": "Internal User",
+      "description": "Manages stock levels."
+    },
+    {
+      "name": "Store Manager",
+      "type": "Internal User",
+      "description": "Ensures the store operates smoothly."
+    },
+    {
+      "name": "Marketing Manager",
+      "type": "Internal User",
+      "description": "Designs and analyzes promotions."
+    },
+    {
+      "name": "Saler",
+      "type": "Internal User",
+      "description": "Assists customers on the floor."
+    },
+    {
+      "name": "Delivery Driver",
+      "type": "Internal User",
+      "description": "Delivers products to customers."
+    },
+    {
+      "name": "Customer Service Agent",
+      "type": "Internal User",
+      "description": "Addresses customer questions and concerns."
+    },
+    {
+      "name": "Accountant",
+      "type": "Internal User",
+      "description": "Manages store finances."
+    },
+    {
+      "name": "Auditor",
+      "type": "Internal User",
+      "description": "Conducts financial reviews and audits."
+    }
+  ],
+  "interactions": [
+    {
+      "sequence": 1,
+      "from_": "Customer",
+      "to": "System",
+      "message": "Search for products",
+      "return_": "Product list"
+    },
+    {
+      "sequence": 2,
+      "from_": "Cashier",
+      "to": "System",
+      "message": "Scan items for checkout",
+      "return_": "Item details and prices"
+    },
+    {
+      "sequence": 3,
+      "from_": "Inventory Manager",
+      "to": "System",
+      "message": "Update stock levels",
+      "return_": "Stock updated confirmation"
+    },
+    {
+      "sequence": 4,
+      "from_": "Store Manager",
+      "to": "System",
+      "message": "Schedule shifts for staff",
+      "return_": "Shift schedule"
+    },
+    {
+      "sequence": 5,
+      "from_": "Marketing Manager",
+      "to": "System",
+      "message": "Analyze sales data",
+      "return_": "Insights report"
+    },
+    {
+      "sequence": 6,
+      "from_": "Saler",
+      "to": "System",
+      "message": "Request product location",
+      "return_": "Product location details"
+    },
+    {
+      "sequence": 7,
+      "from_": "Delivery Driver",
+      "to": "System",
+      "message": "Confirm delivery",
+      "return_": "Delivery confirmation"
+    },
+    {
+      "sequence": 8,
+      "from_": "Customer Service Agent",
+      "to": "System",
+      "message": "Resolve customer query",
+      "return_": "Query resolution status"
+    },
+    {
+      "sequence": 9,
+      "from_": "Accountant",
+      "to": "System",
+      "message": "Prepare financial report",
+      "return_": "Report details"
+    },
+    {
+      "sequence": 10,
+      "from_": "Auditor",
+      "to": "System",
+      "message": "Conduct audit",
+      "return_": "Audit findings"
+    }
+  ],
+  "return_": "System functions are executed as expected, with successful communication between roles and system."
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "role": "Customer",
+    "goal": "I want to find the products I need quickly",
+    "value": "So that I can have a convenient shopping experience."
+  },
+  {
+    "role": "Cashier",
+    "goal": "I want to process transactions efficiently",
+    "value": "So that customers can pay and leave promptly."
+  },
+  {
+    "role": "Inventory Manager",
+    "goal": "I want to track stock levels accurately",
+    "value": "So that we never run out of popular items."
+  },
+  {
+    "role": "Store Manager",
+    "goal": "I want to ensure the store is fully staffed",
+    "value": "So that operations run smoothly even during peak hours."
+  },
+  {
+    "role": "Marketing Manager",
+    "goal": "I want to analyze customer preferences",
+    "value": "So that I can design effective promotions and increase sales."
+  },
+  {
+    "role": "Saler",
+    "goal": "I want to assist customers in finding products",
+    "value": "So that they can make informed purchasing decisions."
+  },
+  {
+    "role": "Delivery Driver",
+    "goal": "I want to deliver orders on time",
+    "value": "So that customer satisfaction is maintained."
+  },
+  {
+    "role": "Customer Service Agent",
+    "goal": "I want to resolve customer queries quickly",
+    "value": "So that we maintain high customer satisfaction."
+  },
+  {
+    "role": "Accountant",
+    "goal": "I want to manage store finances accurately",
+    "value": "So that we maintain profitability and comply with regulations."
+  },
+  {
+    "role": "Auditor",
+    "goal": "I want to review financial records thoroughly",
+    "value": "So that discrepancies are identified and corrected."
+  }
+]

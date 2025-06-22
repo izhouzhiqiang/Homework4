@@ -1,0 +1,107 @@
+{
+  "name": "Supermarket Management System Use Cases",
+  "usecases": [
+    {
+      "name": "Find Products",
+      "include": [
+        "Search Products",
+        "Filter Products",
+        "View Product Details"
+      ],
+      "extends": [
+        "Customer"
+      ]
+    },
+    {
+      "name": "Process Transactions",
+      "include": [
+        "Scan Items",
+        "Apply Discounts",
+        "Handle Payments"
+      ],
+      "extends": [
+        "Cashier"
+      ]
+    },
+    {
+      "name": "Track Inventory",
+      "include": [
+        "Update Stock Levels",
+        "Generate Reports"
+      ],
+      "extends": [
+        "Inventory Manager"
+      ]
+    },
+    {
+      "name": "Ensure Staffing",
+      "include": [
+        "Schedule Shifts",
+        "Manage Absences"
+      ],
+      "extends": [
+        "Store Manager"
+      ]
+    },
+    {
+      "name": "Analyze Preferences",
+      "include": [
+        "Collect Data",
+        "Generate Insights"
+      ],
+      "extends": [
+        "Marketing Manager"
+      ]
+    },
+    {
+      "name": "Assist Customers",
+      "include": [
+        "Provide Information",
+        "Guide to Products"
+      ],
+      "extends": [
+        "Saler"
+      ]
+    },
+    {
+      "name": "Deliver Orders",
+      "include": [
+        "Plan Routes",
+        "Confirm Deliveries"
+      ],
+      "extends": [
+        "Delivery Driver"
+      ]
+    },
+    {
+      "name": "Resolve Queries",
+      "include": [
+        "Answer Questions",
+        "Handle Complaints"
+      ],
+      "extends": [
+        "Customer Service Agent"
+      ]
+    },
+    {
+      "name": "Manage Finances",
+      "include": [
+        "Track Expenses",
+        "Prepare Budgets"
+      ],
+      "extends": [
+        "Accountant"
+      ]
+    },
+    {
+      "name": "Review Records",
+      "include": [
+        "Conduct Audits",
+        "Verify Compliance"
+      ],
+      "extends": [
+        "Auditor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "contracts": [
+    {
+      "name": "ProductSearchConstraint",
+      "constraint_type": "invariant",
+      "context": "Product",
+      "context_type": "class",
+      "expression": {
+        "body": "self.price > 0",
+        "description": "Ensure product price is set correctly."
+      },
+      "severity": "critical",
+      "is_static": true
+    },
+    {
+      "name": "TransactionProcessingConstraint",
+      "constraint_type": "precondition",
+      "context": "Transaction",
+      "context_type": "operation",
+      "expression": {
+        "body": "payment.amount >= total",
+        "description": "Ensure payment covers total purchase cost."
+      },
+      "severity": "medium",
+      "is_static": false
+    },
+    {
+      "name": "InventoryManagementConstraint",
+      "constraint_type": "postcondition",
+      "context": "Inventory",
+      "context_type": "operation",
+      "expression": {
+        "body": "inventoryStock = inventoryStock@pre - soldItems",
+        "description": "Inventory stock should reflect sales."
+      },
+      "severity": "low",
+      "is_static": false
+    },
+    {
+      "name": "StaffSchedulingConstraint",
+      "constraint_type": "guard",
+      "context": "Schedule",
+      "context_type": "association",
+      "expression": {
+        "body": "role = 'CASHIER' or role = 'SALESMAN'",
+        "description": "Schedule guards against invalid role assignments."
+      },
+      "severity": "high",
+      "is_static": true
+    },
+    {
+      "name": "MarketingAnalysisConstraint",
+      "constraint_type": "derivation",
+      "context": "MarketingRecord",
+      "context_type": "attribute",
+      "expression": {
+        "body": "promoEffectiveness = salesGrowth - cost",
+        "description": "Derive effectiveness of marketing promotions."
+      },
+      "severity": "low",
+      "is_static": false
+    }
+  ]
+}
